@@ -1,0 +1,25 @@
+﻿<Window x:Name="mainWindow" x:Class="XslTransformer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XslTransformer"
+        mc:Ignorable="d"
+        Title="Transformer" Height="650" Width="317" ResizeMode="NoResize" Background="White" Icon="66653921_123145465613679_1341540450976469595_n.jpg">
+    <Grid>
+        <TextBox x:Name="InputFileToTransform" HorizontalAlignment="Left" Height="22" Margin="10,195,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Grid.Row="1"/>
+        <TextBox x:Name="InputTransformFile" HorizontalAlignment="Left" Height="22" Margin="10,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Grid.Row="1"/>
+        <TextBox x:Name="OutputPath" HorizontalAlignment="Left" Height="24" Margin="10,391,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205"/>
+        <WebBrowser x:Name="Result" HorizontalAlignment="Left" Height="601" Margin="300,10,0,0" VerticalAlignment="Top" Width="584"/>
+        <Button x:Name="SelectToTransformFileButton" Content="Select..." HorizontalAlignment="Left" Margin="220,195,0,0" VerticalAlignment="Top" Width="75" Height="22" Click="SelectToTransformFileButton_Click"/>
+        <Button x:Name="SelectTransformerFile" Content="Select..." HorizontalAlignment="Left" Margin="220,291,0,0" VerticalAlignment="Top" Width="75" Height="22" Click="SelectTransformerFile_Click"/>
+        <Button x:Name="SelectOutputPath" Content="Select..." HorizontalAlignment="Left" Margin="220,391,0,0" VerticalAlignment="Top" Width="75" Height="24" Click="SelectOutputPath_Click"/>
+        <Button x:Name="TransformButton" Content="Transform" HorizontalAlignment="Left" Margin="10,467,0,0" VerticalAlignment="Top" Width="285" Height="22" Click="TransformButton_Click"/>
+        <Label Content="Input file:" HorizontalAlignment="Left" Margin="10,165,0,0" VerticalAlignment="Top"/>
+        <Label Content="Transformer file:" HorizontalAlignment="Left" Margin="10,261,0,0" VerticalAlignment="Top"/>
+        <Label Content="Output path:" HorizontalAlignment="Left" Margin="10,363,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Logo" Content="Simple &#xD;&#xA;XSLT/XSL &#xD;&#xA;transformer" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="169" Height="132" FontSize="30"/>
+        <Label x:Name="Status" Content="" HorizontalAlignment="Left" Margin="128,505,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.2,-0.192"/>
+
+    </Grid>
+</Window>

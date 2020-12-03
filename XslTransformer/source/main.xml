@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Банковские услуги. 
+Документ должен содержать сведения о клиентах (код, фамилия, 
+имя, отчество, паспортные данные, телефон), кредитах (код, вид, 
+сумма, дата, срок, процентная ставка) и вкладах (код, вид, номер 
+счёта, сумма, процентная ставка, дата)  -->
+<clients>
+	<client id="aef5f699-14b5-4a29-a42d-dde92a9609bf">
+		<lastName>Ivanov</lastName>
+		<firtsName>Ivan</firtsName>
+		<patronymic>Ivanovich</patronymic>
+		<series>9976</series>
+		<number>672923</number>
+		<phone>89197322837</phone>
+		<credits>
+			<credit id="132b7e0f-a6a1-4e6e-b748-c6b5b81641ab">
+				<type>1</type>
+				<summ>673288</summ>
+				<date>2020-20-20</date>
+				<duration>5 years</duration>
+				<rate>9.2</rate>
+			</credit>
+		</credits>
+		<deposits>
+			<deposit id="94e1f241-9ea8-460d-9e7b-25aa69efb3f3">
+				<type>1</type>
+				<accountNumber>576353823626782</accountNumber>
+				<summ>4123123</summ>
+				<rate>3.2</rate>
+				<date>2020-11-11</date>
+			</deposit>
+			<deposit id="47945cce-c83f-41b6-903c-be1c04f8e659">
+				<type>1</type>
+				<accountNumber>576353823626782</accountNumber>
+				<summ>4123123123</summ>
+				<rate>5.2</rate>
+				<date>2020-12-11</date>
+			</deposit>
+		</deposits>
+	</client>
+	<client id="d08be1b1-5086-4f8f-87b3-46b9442d2d6c">
+		<lastName>Petrov</lastName>
+		<firtsName>Petr</firtsName>
+		<patronymic>Petrovich</patronymic>
+		<series>9926</series>
+		<number>362731</number>
+		<phone>89196228911</phone>
+		<credits>
+			<credit id="37e96a52-f85f-4528-875b-03221de979a1">
+				<type>2</type>
+				<summ>3183123</summ>
+				<date>2020-12-13</date>
+				<duration>10 years</duration>
+				<rate>8.2</rate>
+			</credit>	
+			<credit id="f0456ac8-6f07-4d32-9741-92341a70aeb4">
+				<type>2</type>
+				<summ>41251</summ>
+				<date>2020-01-20</date>
+				<duration>20 years</duration>
+				<rate>10.2</rate>
+			</credit>
+		</credits>
+		<deposits>
+			<deposit id="0b974a55-a39c-4da6-aeec-77e021f4cc74">
+				<type>3</type>
+				<accountNumber>731231234123123</accountNumber>
+				<summ>172639123</summ>
+				<rate>2.2</rate>
+				<date>2020-11-11</date>
+			</deposit>
+		</deposits>
+	</client>
+</clients>
